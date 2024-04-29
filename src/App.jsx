@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import * as React from 'react';
  
  const welcome = {
@@ -141,7 +140,6 @@ import * as React from 'react';
   //assign it to variable "item"
   const List = (props) =>  (
          <ul>
-            console.log('List component is rendering. This renders only on first rendering')
             {props.list.map((item) => (
               <Item key={item.objectID} item={item} />
             ))}
